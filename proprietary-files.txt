@@ -928,14 +928,15 @@ vendor/firmware/aw8697_haptic.bin
 # Wi-Fi
 vendor/bin/hw/hostapd
 vendor/bin/hw/wpa_supplicant
-vendor/lib64/libwifi-hal.so
 vendor/lib64/vendor.mediatek.hardware.wifi.hostapd_ext@1.0.so
+-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
 
 # Wi-Fi configs
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/passpointProfile.conf
 vendor/etc/wifi/wpa_supplicant.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
+
 
 # Miscellaneous
 vendor/bin/hw/camerahalserver
@@ -1228,7 +1229,6 @@ vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/etc/init/gbe.rc
 vendor/etc/init/getgameserver.rc
 vendor/etc/init/gsm0710muxd.rc
-vendor/etc/init/hostapd.android.rc
 vendor/etc/init/init.bip_ap.rc
 vendor/etc/init/init.bt_drv.rc
 vendor/etc/init/init.cccimdinit.rc
@@ -2732,7 +2732,6 @@ vendor/lib/libvsim_isee.so
 vendor/lib/libvsim_mitee.so
 vendor/lib/libvt_custom.so
 vendor/lib/libwapi.so
-vendor/lib/libwpa_client.so
 vendor/lib/meta_wifi_data.so
 vendor/lib/s5k4h7_aac_mipi_raw_india_tuning.so
 vendor/lib/s5k4h7_aac_mipi_raw_tuning.so
@@ -3952,7 +3951,6 @@ vendor/lib64/libwa_refocus.so
 vendor/lib64/libwa_rtdof.so
 vendor/lib64/libwapi.so
 vendor/lib64/libwifitest.so
-vendor/lib64/libwpa_client.so
 vendor/lib64/libwpfa.so
 vendor/lib64/libwvkeybox.so
 vendor/lib64/libxmi_high_dynamic_range.so
@@ -4118,3 +4116,5 @@ vendor/bin/init.insmod.sh
 vendor/lib64/libavservices_minijail_vendor.so
 vendor/lib64/libc++_shared.so
 vendor/lib64/libpixelflinger.so
+
+
