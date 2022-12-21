@@ -364,7 +364,8 @@ PRODUCT_PACKAGES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service-lazy \
+    android.hardware.wifi@1.0-service-lazy.pissarro\
+    wpa_supplicant
     android.hardware.wifi.supplicant-service \
     android.hardware.wifi.hostapd@1.3.vendor \
     android.hardware.wifi.supplicant@1.4.vendor \
